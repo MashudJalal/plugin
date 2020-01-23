@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>plugin</title>
+  </head>
+  <body>
+
+
+    <section class="bg-dark banner text-center">
+      <div id="particles-js"></div>
+
+      <div class="logo">
+        <img data-tilt src="images/burger.png" class="img-fluid js-tilt">
+      </div>
+      
+      <h1>HAVE IT YOUR WAY</h1>
+    </section>
+
+
+    <section class="isotopejs">
+      <div class="container" data-js="filtering-demo">
+          <ul class="nav justify-content-center p-5 filter-button-group" >
+            <li class="px-2"><button class="btn btn-danger is-checked" data-filter="*">All</button></li>
+            <li class="px-2"><button class="btn btn-danger" data-filter=".bb">Beef Burger</button></li>
+            <li class="px-2"><button class="btn btn-danger" data-filter=".cb">Chicken Burger</button></li>
+            <li class="px-2"><button class="btn btn-danger" data-filter=".nb">Naga Burger</button></li>
+            <li class="px-2"><button class="btn btn-danger" data-filter=".sb">Salmon Burger</button></li>
+          </ul>
+
+          <div class="row grid">
+            <div class="col-lg-3 col-md-3 col-sm-6 pb-4 nb cb element-item">
+              <a href="#"><img src="images/eightb.jpg" class="img-fluid w-100"></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 pb-4 bb nb element-item">
+              <a href="#"><img src="images/twob.jpg" class="img-fluid w-100"></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 pb-4 sb element-item">
+              <a href="#"><img src="images/threeb.jpg" class="img-fluid w-100"></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 pb-4 cb element-item">
+              <a href="#"><img src="images/fourb.jpg" class="img-fluid w-100"></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 pb-4 nb cb element-item">
+              <a href="#"><img src="images/fiveb.jpg" class="img-fluid w-100"></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 pb-4 bb element-item">
+              <a href="#"><img src="images/sixb.jpg" class="img-fluid w-100"></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 pb-4 cb element-item">
+              <a href="#"><img src="images/sevenb.jpg" class="img-fluid w-100"></a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+    <section class="py-5">
+      <div class="container">
+        <div class="slider-for">
+          <div><a data-lightbox="image-1" href="images/oneb.jpg"><img src="images/oneb.jpg" class="img-fluid"></a></div>
+          <div><a data-lightbox="image-1" href="images/twob.jpg"><img src="images/twob.jpg" class="img-fluid"></a></div>
+          <div><a data-lightbox="image-1" href="images/threeb.jpg"><img src="images/threeb.jpg" class="img-fluid"></a></div>
+          <div><a data-lightbox="image-1" href="images/fourb.jpg"><img src="images/fourb.jpg" class="img-fluid"></a></div>
+          <div><a data-lightbox="image-1" href="images/fiveb.jpg"><img src="images/fiveb.jpg" class="img-fluid"></a></div>
+          <div><a data-lightbox="image-1" href="images/sixb.jpg"><img src="images/sixb.jpg" class="img-fluid"></a></div>
+          <div><a data-lightbox="image-1" href="images/sevenb.jpg"><img src="images/sevenb.jpg" class="img-fluid"></a></div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+    <script src="js/tilt.jquery.min.js"></script>
+    <script>
+      $('.js-tilt').tilt({
+        glare: true,
+        maxGlare: .5
+      })
+    </script>
+
+    <script src="js/isotope-docs.min.js"></script>
+
+
+    <script src="js/slick.min.js"></script>   
+    <script>
+      $('.slider-for').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+          fade: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          centerMode: true,
+          centerPadding: '60px',
+
+          responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+        });
+    </script>
+
+
+    <script src="js/lightbox.min.js"></script> 
+
+
+  </body>
+</html>

@@ -1,0 +1,90 @@
+.banner{
+	background-image: url(../images/food.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: overlay;
+	height: 100vh;
+	overflow: hidden;/*overflow hidden 4 height*/
+	position: relative;
+}
+.logo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 9;
+	height: 200px;
+	width: 200px;
+}
+.banner h1{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,0);
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#123b6d+1,f79e13+15,f79e13+16,f79e13+16,f79e13+16,f79e13+16,f79e13+16,a20e1d+47,f79e13+85,f79e13+86,f79e13+86,123b6d+100 */
+	background: rgb(18,59,109); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(18,59,109,1) 1%, rgba(247,158,19,1) 15%, rgba(247,158,19,1) 16%, rgba(247,158,19,1) 16%, rgba(247,158,19,1) 16%, rgba(247,158,19,1) 16%, rgba(247,158,19,1) 16%, rgba(162,14,29,1) 47%, rgba(247,158,19,1) 85%, rgba(247,158,19,1) 86%, rgba(247,158,19,1) 86%, rgba(18,59,109,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(18,59,109,1) 1%,rgba(247,158,19,1) 15%,rgba(247,158,19,1) 16%,rgba(247,158,19,1) 16%,rgba(247,158,19,1) 16%,rgba(247,158,19,1) 16%,rgba(247,158,19,1) 16%,rgba(162,14,29,1) 47%,rgba(247,158,19,1) 85%,rgba(247,158,19,1) 86%,rgba(247,158,19,1) 86%,rgba(18,59,109,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(18,59,109,1) 1%,rgba(247,158,19,1) 15%,rgba(247,158,19,1) 16%,rgba(247,158,19,1) 16%,rgba(247,158,19,1) 16%,rgba(247,158,19,1) 16%,rgba(247,158,19,1) 16%,rgba(162,14,29,1) 47%,rgba(247,158,19,1) 85%,rgba(247,158,19,1) 86%,rgba(247,158,19,1) 86%,rgba(18,59,109,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#123b6d', endColorstr='#123b6d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	-webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+}
+
+.slider-for img{
+	transition: all 0.4s;
+	padding: 10px 10px;
+	height: 300px;
+}
+.slick-center img{
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    color: #e67e22;
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+
+
+.isotopejs img{
+	height: 143px;
+}
+
+
+
+@media (max-width: 991px){
+	.banner{
+		height: 70vh;
+	}
+	.banner h1{
+		font-size: 27px;
+		margin-top: 15px;
+	}
+	.logo{
+		height: 160px;
+		width: 160px;
+	}
+	.isotopejs ul li{
+		padding-bottom: 10px
+	}
+}
+
+@media (max-width: 767px){
+	.banner{
+		height: 60vh;
+	}
+	.banner h1{
+		font-size: 25px;
+		margin-top: 15px
+	}
+	.logo{
+		height: 150px;
+		width: 150px;
+	}
+}
+
+
